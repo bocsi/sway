@@ -3,3 +3,5 @@ wpa_supplicant
 waybar
 sway
 xorg_xwayland
+xdg-desktop-portal-wlr
+xdg-user-dirs
