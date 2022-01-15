@@ -1,0 +1,28 @@
+
+# find your wifi $inerface:
+ip link
+
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+# add these lines in the newly created file:
+
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+
+wpa_supplicant -B -i $interface -c /etc/wpa_supplicant/wpa_supplicant.conf
+
+wpa_cli -i $interface
+
+> scan
+ok
+> scan_results
+> add_network
+0
+> set_network 0 ssid "MYSSID"
+> set_network 0 psk "passphrase"
+> enable_network 0
+> save_config
+OK
+> quit
+
+dhcpcd $interface
