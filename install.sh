@@ -13,3 +13,17 @@ sudo pacman -S --needed - < packages.txt
 
 chmod +x themes.sh
 
+mkdir /home/$user/.config
+mkdir /home/$user/.config/sway
+mkdir /home/$user/.config/swaylock
+mkdir /home/$user/.config/waybar
+mkdir /home/$user/.config/alacritty
+
+cd dotfiles
+cp sway/* /home/$user/.config/sway
+cp waybar/* /home/$user/.config/waybar
+cp swaylock/* /home/$user/.config/swaylock
+cp alacritty/* /home/$user/.config/alacritty
+cd ..
+
+xdg-user-dirs-update
