@@ -28,6 +28,8 @@ cd ..
 
 xdg-user-dirs-update
 
+cp wallapers/* /home/$user/Pictures
+
 yay -S auto-cpufreq
 sudo systemctl enable auto-cpufreq
 sudo systemctl start auto-cpufreq
