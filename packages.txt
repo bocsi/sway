@@ -9,3 +9,5 @@ xdg-user-dirs
 vulkan-headers
 vulkan-validation-layers
 xdg-desktop-portal-wlr
+dialog
+netctl
