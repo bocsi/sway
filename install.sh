@@ -27,3 +27,7 @@ cp alacritty/* /home/$user/.config/alacritty
 cd ..
 
 xdg-user-dirs-update
+
+yay -S auto-cpufreq
+sudo systemctl enable auto-cpufreq
+sudo systemctl start auto-cpufreq
