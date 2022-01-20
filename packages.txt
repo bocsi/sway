@@ -17,3 +17,4 @@ gcc
 nemo
 nemo-fileroller
 wofi
+ttf-font-awesome
