@@ -53,14 +53,14 @@ set $menu wofi --show run
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /home/rad/Downloads/wallpaper1.jpg fill
+output * bg /home/rad/Pictures/wallpaper1.jpg fill
 
 #
 # Example configuration:
-output HDMI-A-1 scale 2
-output HDMI-A-1 res 3840 2160
-output HDMI-A-1 pos 1920 0
-output eDP-1 pos 1920 1080
+# output HDMI-A-1 scale 2
+# output HDMI-A-1 res 3840 2160
+# output HDMI-A-1 pos 1920 0
+# output eDP-1 pos 1920 1080
 
 # output HDMI-A-2 pos 1920 1080
 #
