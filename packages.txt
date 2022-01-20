@@ -16,3 +16,4 @@ geany
 gcc
 nemo
 nemo-fileroller
+wofi
