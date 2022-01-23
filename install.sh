@@ -43,3 +43,4 @@ sudo systemctl enable bluetooth
 # cd aic94xx-firmware
 # makepkg -sri
 # yay -S upd72020x-fw
+
