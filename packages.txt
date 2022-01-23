@@ -3,13 +3,16 @@ base-devel
 bluez
 bluez-utils
 blueman
+cmake
 dhcpcd
 dialog
 freerdp
 gcc
 geany
+make
 nemo
 nemo-fileroller
+neofetch
 netctl
 networkmanager
 pipewire-pulse
