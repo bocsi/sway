@@ -11,9 +11,6 @@ makepkg -si
 
 cd ..
 
-chmod +x themes.sh
-./themes.sh
-
 mkdir /home/$user/.config
 mkdir /home/$user/.config/sway
 mkdir /home/$user/.config/swaylock
@@ -35,6 +32,9 @@ yay -S auto-cpufreq
 sudo systemctl enable auto-cpufreq
 sudo systemctl start auto-cpufreq
 sudo systemctl enable bluetooth
+
+chmod +x themes.sh
+./themes.sh
 
 # hp laptop
 # git clone https://aur.archlinux.org/wd719x-firmware.git
