@@ -1,3 +1,8 @@
+alacritty
+base-devel
+bluez
+bluez-utils
+blueman
 dhcpcd
 dialog
 freerdp
@@ -6,15 +11,17 @@ geany
 nemo
 nemo-fileroller
 netctl
+networkmanager
+pipewire-pulse
 sway
 swaylock
+swayidle
 ttf-font-awesome
 vulkan-headers
 vulkan-validation-layers
 waybar
 wofi
 wpa_supplicant
-xdg-desktop-portal-wlr
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xorg_xwayland
