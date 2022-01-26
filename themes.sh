@@ -8,7 +8,7 @@ rm -rf Orchis-theme
 # icon theme
 git clone https://github.com/yeyushengfan258/Reversal-icon-theme.git
 cd Reversal-icon-theme/
-./install.sh -blue
+./install.sh -blue -black
 cd ..
 rm -rf Reversal-icon-theme
 
