@@ -28,4 +28,4 @@ wofi
 wpa_supplicant
 xdg-desktop-portal-wlr
 xdg-user-dirs
-xorg_xwayland
+xorg-xwayland
