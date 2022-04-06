@@ -16,7 +16,7 @@ cd ..
 git clone https://github.com/vinceliuice/Colloid-icon-theme.git
 cd Colloid-icon-theme
 ./install.sh
-cd..
+cd ..
 
 #clean up
 rm -rf Colloid-gtk-theme
