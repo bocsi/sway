@@ -17,7 +17,17 @@ git clone https://github.com/vinceliuice/Colloid-icon-theme.git
 cd Colloid-icon-theme
 ./install.sh
 cd ..
+#cursor theme
+directory=`ls -all ~ | grep icons | cut -d ' ' -f 15`
+if [ "$directory" == ".icons" ]; then
+    echo ".icons directory exists"
+else 
+    mkdir $HOME/.icons/
+fi
 
+git clone https://github.com/alvatip/Nordzy-cursors.git
+cd Nordzy-cursors/archives
+tar -zxvf Nordzy-cursors.tar.gz -C $HOME/.icons/
 #clean up
 rm -rf Colloid-gtk-theme
 rm -rf Colloid-icon-theme
