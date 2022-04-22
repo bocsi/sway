@@ -24,10 +24,12 @@ if [ "$directory" == ".icons" ]; then
 else 
     mkdir $HOME/.icons/
 fi
-
 git clone https://github.com/alvatip/Nordzy-cursors.git
 cd Nordzy-cursors/archives
 tar -zxvf Nordzy-cursors.tar.gz -C $HOME/.icons/
+cd ..
+cd ..
 #clean up
+rm -rf Nordzy-cursors
 rm -rf Colloid-gtk-theme
 rm -rf Colloid-icon-theme
