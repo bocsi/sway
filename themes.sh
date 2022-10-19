@@ -15,7 +15,7 @@ cd ..
 # icon theme
 git clone https://github.com/vinceliuice/Colloid-icon-theme.git
 cd Colloid-icon-theme
-./install.sh
+./install.sh -s nord -t teal
 cd ..
 #cursor theme
 directory=`ls -all ~ | grep icons | cut -d ' ' -f 15`
