@@ -10,7 +10,7 @@ fi
 # gtk theme
 git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
 cd Colloid-gtk-theme
-./install.sh --tweaks rimless normal
+./install.sh --tweaks nord rimless normal
 cd ..
 # icon theme
 git clone https://github.com/vinceliuice/Colloid-icon-theme.git
