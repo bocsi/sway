@@ -1,15 +1,7 @@
 #! /bin/bash
 
 user=$(whoami)
-
-sudo pacman -S --needed - < packages.txt
-
-# aur helper
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-cd ..
+for i in `cat packages.txt` ; do sudo dnf -y install $i; done
 
 mkdir /home/$user/.config
 mkdir /home/$user/.config/sway
@@ -28,20 +20,6 @@ xdg-user-dirs-update
 
 cp wallapers/* /home/$user/Pictures
 
-yay -S auto-cpufreq
-sudo systemctl enable auto-cpufreq
-sudo systemctl start auto-cpufreq
-sudo systemctl enable bluetooth
-
 chmod +x themes.sh
 ./themes.sh
-
-# hp laptop
-# git clone https://aur.archlinux.org/wd719x-firmware.git
-# cd wd719x-firmware
-# makepkg -sri
-# git clone https://aur.archlinux.org/aic94xx-firmware.git
-# cd aic94xx-firmware
-# makepkg -sri
-# yay -S upd72020x-fw
 
