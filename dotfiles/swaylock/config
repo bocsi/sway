@@ -1,145 +1,51 @@
-{
-    "margin-top": 6,
-    "margin-left": 6,
-    "margin-right":6,
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 26, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 1, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": ["sway/workspaces"],
-    // "sway/mode", "custom/media"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["custom/weather", "battery", "network", "cpu", "memory", "pulseaudio", "temperature", "clock", "tray", "custom/dunst"],
-    
-    // Modules configuration
-    "sway/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "format": "{icon}",
-         "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "6": "",
-             "7": "",
-             "8": "",
-             "9": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-     
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}",
-        "on-click": "gnome-calendar"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{used:0.1f}G "
-    },
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "🔅", "🔆", "☀️"]
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-good": "", // An empty format will hide the module
-        "format-full": "{capacity}% ",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": " ",
-        "format-ethernet": "爵",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    
-    "custom/weather": {
-    "exec": "weather",
-    "interval": 3600,
-    "on-click": "gnome-weather"
-	},
-	
-    "custom/dunst": {
-        "exec": "~/.config/waybar/dunst.sh",
-        "on-click": "dunstctl set-paused toggle",
-        "restart-interval": 1,
-        "tooltip": false,
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-}
+ignore-empty-password
+font=Ubuntu
 
+clock
+timestr=%R
+datestr=%a, %e of %B
+
+screenshots
+
+fade-in=0.2
+
+effect-blur=30x2
+effect-greyscale
+effect-scale=0.1
+
+indicator
+indicator-radius=240
+indicator-thickness=20
+indicator-caps-lock
+
+key-hl-color=880033
+
+separator-color=00000000
+
+inside-color=00000099
+inside-clear-color=ffd20400
+inside-caps-lock-color=009ddc00
+inside-ver-color=d9d8d800
+inside-wrong-color=ee2e2400
+
+ring-color=231f20D9
+ring-clear-color=231f20D9
+ring-caps-lock-color=231f20D9
+ring-ver-color=231f20D9
+ring-wrong-color=231f20D9
+
+line-color=00000000
+line-clear-color=ffd204FF
+line-caps-lock-color=009ddcFF
+line-ver-color=d9d8d8FF
+line-wrong-color=ee2e24FF
+
+text-clear-color=ffd20400
+text-ver-color=d9d8d800
+text-wrong-color=ee2e2400
+
+bs-hl-color=ee2e24FF
+caps-lock-key-hl-color=ffd204FF
+caps-lock-bs-hl-color=ee2e24FF
+disable-caps-lock-text
+text-caps-lock-color=009ddc
